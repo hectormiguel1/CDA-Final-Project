@@ -1,0 +1,12 @@
+/home/hectorr/final_assigment_cda/transaction-proccessor/target/rls/debug/deps/ocl_core-0af385837d67b5b5.rmeta: /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/lib.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/functions.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/mod.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/abs.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/enums.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/structs.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/error.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/util.rs
+
+/home/hectorr/final_assigment_cda/transaction-proccessor/target/rls/debug/deps/ocl_core-0af385837d67b5b5.d: /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/lib.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/functions.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/mod.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/abs.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/enums.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/structs.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/error.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/util.rs
+
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/lib.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/functions.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/mod.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/abs.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/enums.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/types/structs.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/error.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/ocl-core-0.11.2/src/util.rs:
