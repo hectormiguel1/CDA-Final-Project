@@ -6,7 +6,7 @@ const ARG_INDEX :usize = 1;
 const EXPECTED_ARG: &str = "-n";
 const NUM_ACCOUNTS_INDEX: usize = 2;
 const MIN_ACCOUNT_RANGE :i32 = 100000;
-const MAX_ACCOUNT_RANGE: i32 = 1000000;
+const MAX_ACCOUNT_RANGE: i32 = 10000000;
 const MIN_ACCOUNT_BALANCE: f32 = 100.00;
 const MAX_ACCOUNT_BALANCE: f32 = 10000.00;
 
@@ -37,6 +37,7 @@ fn usage() {
     ./account_generator [options] \n\
     [OPTIONS]: \n\
     -n [NUMBER]: number of accounts to generate. \n");
+    println!("DONE");
 }
 
 //Prints error to STDERR if unable to parse passed in integer
@@ -56,6 +57,7 @@ fn gen_accounts(num_to_gen: i32) {
             account_number = rng.gen_range(MIN_ACCOUNT_RANGE,MAX_ACCOUNT_RANGE);
         }
         accounts.push(account_number);
-        println!("ACCOUNT:{} BALANCE:{:.2}",account_number, account_balance);
+        println!("{} {:.2}",account_number, account_balance);
     }
+    println!("DONE");
 }
