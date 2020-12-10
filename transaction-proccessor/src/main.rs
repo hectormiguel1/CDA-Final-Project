@@ -3,7 +3,7 @@ use threadpool::ThreadPool;
 
 #[derive(Debug, Clone)]
 enum TransType {
-    Check_Balance, Deposit, Withdraw, Error
+    CheckBalance, Deposit, Withdraw, Error
 }
 #[derive(Debug, Clone)]
 struct Account {
@@ -74,7 +74,7 @@ fn read_from_stdin() -> (Vec<Transaction>, Vec<Account>) {
        let trnas_type_converted : TransType;
 
        match trans_type {
-           0 => trnas_type_converted = TransType::Check_Balance,
+           0 => trnas_type_converted = TransType::CheckBalance,
            1 => trnas_type_converted = TransType::Deposit,
            2 => trnas_type_converted = TransType::Withdraw,
            _ => trnas_type_converted = TransType::Error, 
@@ -128,7 +128,7 @@ fn process_transactions(mut job: &mut Job) {
                     processed_trans += 1;
                 }
             }
-            TransType::Check_Balance => {/* Do Nothing */}
+            TransType::CheckBalance => {/* Do Nothing */}
             _ => panic!("Arrived at imposible state")
         }
     }
