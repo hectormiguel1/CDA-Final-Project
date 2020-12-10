@@ -30,8 +30,9 @@ const MAX_NUM_THREADS: usize = 100;
 fn main() {
     let (trans, accounts) = read_from_stdin();
     let num_accounts = accounts.len();
-    let jobs = get_jobs(accounts, trans);
+    let jobs = create_jobs(accounts, trans);
     let thread_pool_size;
+    let mut total_transactions = 0;
     {
         if jobs.len() < MAX_NUM_THREADS {
              thread_pool_size = jobs.len();
@@ -44,9 +45,6 @@ fn main() {
     for job in 0..jobs.len() {
         let mut passed_job = jobs[job].clone();
         thread_pool.execute(move || {process_transactions(&mut passed_job)});
-    }
-    let mut total_transactions = 0;
-    for job in 0..jobs.len() {
         total_transactions += jobs[job].total_num;
     }
     thread_pool.join();
@@ -99,7 +97,7 @@ fn read_from_stdin() -> (Vec<Transaction>, Vec<Account>) {
     return (trans_vec, account_vec);
 }
 
-fn get_jobs(accounts: Vec<Account>, transactions: Vec<Transaction>) -> Vec<Job> {
+fn create_jobs(accounts: Vec<Account>, transactions: Vec<Transaction>) -> Vec<Job> {
     let mut job_vec : Vec<Job> = Vec::new();
     for account in 0..accounts.len() {
         let _account = accounts[account].clone();

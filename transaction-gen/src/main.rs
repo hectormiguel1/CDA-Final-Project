@@ -3,7 +3,7 @@ use threadpool::ThreadPool;
 use rand::Rng;
 use chrono::prelude::*;
 
-const TRANS_TYPE :[&str;3] = ["Check_Balance", "Deposit", "Withdraw"];
+const TRANS_TYPE :[&str;3] = ["CheckBalance", "Deposit", "Withdraw"];
 const MIN_TRANS_TYPE: usize = 0;
 const MIN_TRANS_AMOUNT: f32 = 0.0;
 const MAX_TRANS_AMOUNT: f32 = 10000.0;
