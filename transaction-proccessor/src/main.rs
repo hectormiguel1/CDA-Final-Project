@@ -24,16 +24,19 @@ struct Job {
     total_num: usize
 }
 
+const MAX_NUM_THREADS: usize = 100;
+
+
 fn main() {
     let (trans, accounts) = read_from_stdin();
     let num_accounts = accounts.len();
     let jobs = get_jobs(accounts, trans);
     let thread_pool_size;
     {
-        if jobs.len() < 10000 {
-             thread_pool_size = (jobs.len() / 2) +1;
+        if jobs.len() < MAX_NUM_THREADS {
+             thread_pool_size = jobs.len();
         } else {
-             thread_pool_size = (jobs.len() / 10) +1;
+             thread_pool_size = MAX_NUM_THREADS;
         }
     };
     let thread_pool = ThreadPool::new(thread_pool_size);
@@ -41,7 +44,6 @@ fn main() {
     for job in 0..jobs.len() {
         let mut passed_job = jobs[job].clone();
         thread_pool.execute(move || {process_transactions(&mut passed_job)});
-        thread_pool.join();
     }
     let mut total_transactions = 0;
     for job in 0..jobs.len() {

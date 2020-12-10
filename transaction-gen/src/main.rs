@@ -9,6 +9,7 @@ const MIN_TRANS_AMOUNT: f32 = 0.0;
 const MAX_TRANS_AMOUNT: f32 = 10000.0;
 const MIN_TRANS_COUNT: u32 = 5;
 const MAX_TRANS_COUNT: u32 = 20;
+const MAX_NUM_THREADS: usize = 100;
 
 #[derive(Debug, Clone, Copy)]
 struct Account {
@@ -20,10 +21,10 @@ fn main() {
    let accounts = read_from_stdin();
    let thread_pool_size;
    {
-       if accounts.len() < 10000 {
-            thread_pool_size = (accounts.len() / 2) +1;
+       if accounts.len() < MAX_NUM_THREADS {
+            thread_pool_size = accounts.len();
        } else {
-            thread_pool_size = (accounts.len() / 10) +1;
+            thread_pool_size = MAX_NUM_THREADS;
        }
    };
    let thread_pool = ThreadPool::new(thread_pool_size);
@@ -36,7 +37,6 @@ fn main() {
        thread_pool.execute( move || {
            gen_transactions(passed_account, passed_num_trans)
        });
-       thread_pool.join();
    }
    thread_pool.join();
    println!("DONE");
