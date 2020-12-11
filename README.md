@@ -1,6 +1,8 @@
 # CDA-Final-Project
 This program was made on rust, binaries included are on windows and linux. 
-included binaris are stored in each target directory for each of the programs.
+Included binaris are stored in each target directory for each of the programs.
+
+For convinience the release folder containes compiled binaries for linux and windows. 
 
 # Programs:
 <ins>account-gen</ins>: This is a simple program that n unique accounts and their starting balance, they accounts generated are printed to stdout.
@@ -59,7 +61,7 @@ Example:
 
  <ins>Windows: IN-POWERSHELL!!!</ins>
 
-  '/account-gen.exe -n 20 | transaction-gen.exe | transaction-proccessor.exe'   
+  '.\account-gen.exe -n 20 | .\transaction-gen.exe | .\transaction-proccessor.exe'   
  
  
  ## Current Tests: 
