@@ -35,11 +35,12 @@ fn main() {
     let mut total_transactions = 0;
     {
         if jobs.len() < MAX_NUM_THREADS {
-             thread_pool_size = jobs.len();
+             thread_pool_size = jobs.len() + 1;
         } else {
-             thread_pool_size = MAX_NUM_THREADS;
+             thread_pool_size = MAX_NUM_THREADS + 1;
         }
-    };
+    }
+
     let thread_pool = ThreadPool::new(thread_pool_size);
 
     for job in 0..jobs.len() {
@@ -126,7 +127,7 @@ fn process_transactions(mut job: &mut Job) {
                     processed_trans += 1;
                 }
             }
-            TransType::CheckBalance => {/* Do Nothing */}
+            TransType::CheckBalance => {processed_trans += 1}
             _ => panic!("Arrived at imposible state")
         }
     }

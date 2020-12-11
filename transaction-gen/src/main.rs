@@ -22,9 +22,9 @@ fn main() {
    let thread_pool_size;
    {
        if accounts.len() < MAX_NUM_THREADS {
-            thread_pool_size = accounts.len();
+            thread_pool_size = accounts.len() +1 ;
        } else {
-            thread_pool_size = MAX_NUM_THREADS;
+            thread_pool_size = MAX_NUM_THREADS +1;
        }
    };
    let thread_pool = ThreadPool::new(thread_pool_size);

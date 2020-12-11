@@ -1,0 +1,11 @@
+/home/hectorr/final_assigment_cda/account-gen/target/x86_64-pc-windows-gnu/debug/deps/getrandom-31c02e3acbc5decb.rmeta: /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/lib.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/error.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/util.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/error_impls.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/windows.rs
+
+/home/hectorr/final_assigment_cda/account-gen/target/x86_64-pc-windows-gnu/debug/deps/libgetrandom-31c02e3acbc5decb.rlib: /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/lib.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/error.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/util.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/error_impls.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/windows.rs
+
+/home/hectorr/final_assigment_cda/account-gen/target/x86_64-pc-windows-gnu/debug/deps/getrandom-31c02e3acbc5decb.d: /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/lib.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/error.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/util.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/error_impls.rs /home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/windows.rs
+
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/lib.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/error.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/util.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/error_impls.rs:
+/home/hectorr/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.1.15/src/windows.rs:
