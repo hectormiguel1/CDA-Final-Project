@@ -53,10 +53,12 @@ Example:
 
  <ins>Linux/MacOs</ins>: 
 
- './account-gen -n 20 | transaction-gen | transaction-proccessor' <- This will run the 3 applications at the same time, which each wait for outfrom the other. 
+ './account-gen -n 20 | transaction-gen | transaction-proccessor' 
+ 
+  This will run the 3 applications at the same time, which each wait for outfrom the other. 
 
  <ins>Windows: IN-POWERSHELL!!!</ins>
- 
+
   '/account-gen.exe -n 20 | transaction-gen.exe | transaction-proccessor.exe'   
  
  
