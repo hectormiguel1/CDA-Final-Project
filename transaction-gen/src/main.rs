@@ -64,7 +64,6 @@ fn main() {
    thread_pool.join();
    //Control message, when this is printed on the screen, target application should stop reading from STDIN. 
    println!("DONE");
-
 }
 
 /*
@@ -116,6 +115,9 @@ fn read_from_stdin() ->  Vec<Account> {
 */
 fn gen_transactions(account: Account, num_trans: u32) {
     let mut random = rand::thread_rng();
+    //This is the used to pass the new account to the other programs, defines the starting balance of the account. 
+    println!("{time} {account_id} {trans_type} {amount}", time=0, account_id=account.account_id, trans_type=1, amount=account.account_balance);
+    //Iterate from 0 to desired number of transactions to generate transactions using random data. 
     for _ in 0..num_trans {
         let trans_time = Utc::now().timestamp_nanos();
         let trans_type = random.gen_range(MIN_TRANS_TYPE, TRANS_TYPE.len());
