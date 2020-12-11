@@ -61,6 +61,8 @@ Example:
 
  <ins>Windows: IN-POWERSHELL!!!</ins>
 
+ For Windows powershell is required as the standard command prompt application does not have build in pipe capabilities. 
+
   '.\account-gen.exe -n 20 | .\transaction-gen.exe | .\transaction-proccessor.exe'   
  
  
