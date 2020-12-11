@@ -29,7 +29,7 @@ Program Usage:
  Accounts are printed in the format: {account_id} {accout_balance}
  
  ## Transactions-gen:
- To compile this application, with cargo and rustc installed, go inside account-gen directory and run cargo build --release, for a release version of the tool, 
+ To compile this application, with cargo and rustc installed, go inside transaction-gen directory and run cargo build --release, for a release version of the tool, 
  this linux and windows version can be found inside the target/release subfolders. 
 
  This application also employes multithreads/multicore design to generate transactions for up to 100 accounts at a time. 
@@ -39,7 +39,7 @@ Program Usage:
  Application prints transaction in format: {transaction_time_nanoseconds} {transaction_account_id} {transaction_type} {transaction_amount}
  
  ## Tranasation-proccessor:
- To compile this application, with cargo and rustc installed, go inside account-gen directory and run cargo build --release, for a release version of the tool, 
+ To compile this application, with cargo and rustc installed, go inside transaction-proccessor directory and run cargo build --release, for a release version of the tool, 
  this linux and windows version can be found inside the target/release subfolders. 
 
  Applications uses multithreading/multicore desgn to proccess batches of up 100 Jobs {account and pending tranasactions} at a time. 
