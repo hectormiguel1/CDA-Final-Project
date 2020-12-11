@@ -51,8 +51,13 @@ using powershell. Linux and MacOS have pipe builtin to their terminal applicatio
 
 Example: 
 
- Linux/MacOs: './account-gen -n 20 | transaction-gen | transaction-proccessor' <- This will run the 3 applications at the same time, which each wait for outfrom the other. 
- Windows: IN-POWERSHELL!!! '/account-gen.exe -n 20 | transaction-gen.exe | transaction-proccessor.exe'   
+ <ins>Linux/MacOs</ins>: 
+
+ './account-gen -n 20 | transaction-gen | transaction-proccessor' <- This will run the 3 applications at the same time, which each wait for outfrom the other. 
+
+ <ins>Windows: IN-POWERSHELL!!!</ins>
+ 
+  '/account-gen.exe -n 20 | transaction-gen.exe | transaction-proccessor.exe'   
  
  
  ## Current Tests: 
